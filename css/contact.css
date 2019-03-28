@@ -1,0 +1,49 @@
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "section";
+  grid-column-gap: 10px;
+}
+
+img.contact-resize {
+  float: left;
+  width: 250px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  border: 3px solid green;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+.contact-name {
+  position: relative;
+  top: 0;
+}
+
+.contact-speciality {
+  position: relative;
+  top: 50%;
+}
+
+.contact-speciality ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 30px;
+}
+
+@media only screen and (max-width: 450px) {
+  .contact-speciality {
+    position: relative;
+    top: 0;
+  }
+  img.contact-resize {
+    /* Will force the text on the right to jump under the picture */
+    margin-right: 200px;
+  }
+}

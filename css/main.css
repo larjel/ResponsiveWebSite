@@ -1,0 +1,118 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header {
+  background: #000;
+  height: 150px;
+}
+
+.logo {
+  padding: 10px;
+  float: left;
+}
+
+/* SECTION: Create navigation menu from list */
+
+.menu {
+  background: #ccc;
+  text-align: right;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.menu li {
+  display: inline;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/**************************************/
+
+.main-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.other {
+  background: pink;
+  width: 30%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+
+.container {
+  background: blue;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.product-box {
+  width: 190px;
+  height: 266px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: lightblue;
+}
+
+img.resize {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+footer {
+  background: green;
+  min-height: 120px;
+  padding: 10px;
+}
+
+/* Overrides for resolution up to 768 pixels  */
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    float: right;
+  }
+  .menu {
+    text-align: left;
+  }
+  .main-container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .other {
+    min-height: 150px;
+    width: 100%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .product-box {
+    width: 96%;
+    height: 266px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+  }
+  img.resize {
+    height: 100%;
+    width: auto;
+  }
+}
